@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const db = require('./db');
 
 app.get('/', (req, res) => {
   res.send('Hello World! Crossword game server is up and running.');
