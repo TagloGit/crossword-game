@@ -4,7 +4,7 @@ const pool = new Pool({
   user: 'crossword_user',
   host: 'localhost',
   database: 'crossword_game',
-  password: 'taglo',  // Use the password you set in Step 4.2
+  password: 'taglo',
   port: 5432,  // Default PostgreSQL port
 });
 
