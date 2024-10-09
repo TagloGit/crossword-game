@@ -15,7 +15,6 @@ pool.query('SELECT NOW()', (err, res) => {
   } else {
     console.log('Database connected successfully at:', res.rows[0].now);
   }
-  pool.end();
 });
 
 module.exports = pool;
