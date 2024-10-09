@@ -1,4 +1,5 @@
-const { Pool } = require('pg');
+import pg from 'pg';
+const { Pool } = pg;
 
 const pool = new Pool({
   user: 'crossword_user',
@@ -17,4 +18,4 @@ pool.query('SELECT NOW()', (err, res) => {
   }
 });
 
-module.exports = pool;
+export default pool;
